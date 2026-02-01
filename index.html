@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMR DESIGN | روابط القناة</title>
+    <!-- تم تبديل الرابط بنسخة أكثر استقراراً -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Orbitron:wght@700&display=swap');
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+            min-height: 100vh;
+            color: white;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        /* الشعار العلوي - تحسين التموضع لعدم التداخل */
+        .top-logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-family: 'Orbitron', sans-serif;
+            z-index: 50;
+        }
+        .top-logo span {
+            display: block;
+            text-shadow: 0 0 10px #ffffff, 0 0 20px rgba(255,255,255,0.5);
+        }
+        .top-logo .amr { font-size: 1.4rem; font-weight: 700; }
+        .top-logo .design { font-size: 0.7rem; letter-spacing: 2px; opacity: 0.8; }
+
+        /* الحاوية الرئيسية */
+        .main-container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            z-index: 10;
+            margin-top: 60px; /* مسافة لعدم التداخل مع اللوجو العلوي */
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border: 2px solid white;
+            padding: 5px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 15px 20px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .link-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-3px);
+            border-color: white;
+        }
+
+        .glow-text {
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-item {
+            animation: fadeIn 0.8s ease forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-logo">
+        <span class="amr">AMR</span>
+        <span class="design">DESIGN</span>
+    </div>
+
+    <div class="main-container">
+        <!-- الملف الشخصي -->
+        <div class="animate-item mb-10">
+            <img src="https://api.dicebear.com/7.x/initials/svg?seed=AMR&backgroundColor=ffffff&fontFamily=Orbitron&fontSize=40&fontColor=000000" class="profile-img mx-auto mb-4">
+            <h1 class="text-3xl font-bold glow-text">AMR DESIGN</h1>
+            <p class="text-gray-400 mt-2 text-sm tracking-widest">Creative Vision • Digital Art</p>
+        </div>
+
+        <!-- الروابط -->
+        <div class="animate-item" style="animation-delay: 0.2s;">
+            <a href="https://www.tiktok.com/@mais_ahmed7?_r=1&_t=ZS-93Xj4eZV2U4" target="_blank" class="link-card">
+                <i class="fab fa-tiktok text-xl w-8"></i>
+                <span class="flex-1 text-right mr-4 font-bold">TikTok</span>
+                <i class="fas fa-chevron-left text-xs opacity-30"></i>
+            </a>
+
+            <a href="https://t.me/AMRDESIGN12" target="_blank" class="link-card">
+                <i class="fab fa-telegram-plane text-xl w-8 text-blue-400"></i>
+                <span class="flex-1 text-right mr-4 font-bold">Telegram</span>
+                <i class="fas fa-chevron-left text-xs opacity-30"></i>
+            </a>
+
+            <a href="https://www.instagram.com/maya_ali_60002?igsh=MW1pOWtla3gycW92bQ%3D%3D&utm_source=qr" target="_blank" class="link-card">
+                <i class="fab fa-instagram text-xl w-8 text-pink-500"></i>
+                <span class="flex-1 text-right mr-4 font-bold">Instagram</span>
+                <i class="fas fa-chevron-left text-xs opacity-30"></i>
+            </a>
+        </div>
+
+        <p class="mt-12 text-white/20 text-[10px] tracking-[0.4em]">AMR DESIGN © 2025</p>
+    </div>
+
+</body>
+</html>
